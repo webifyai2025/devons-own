@@ -1,0 +1,15 @@
+Sla de productfoto's op met EXACT deze bestandsnamen in deze map (images/):
+
+  hero-1.jpg   → Visjes ketting op citroen schaaltje
+  hero-2.jpg   → Gouden hart ketting op kersen schaaltje
+  hero-3.jpg   → Kleurrijke kralen telefoonkoord (Fijne Vibes geel)
+  hero-4.jpg   → Zwart roze telefoonkoord (Fijne Vibes roze)
+  hero-5.jpg   → Zwart/geel/witte kralen ketting op marmer
+  hero-6.jpg   → Rode kralen enkelband met schelp op marmer
+  hero-7.jpg   → Roze kralen armband met sneeuwvlok bedel
+  hero-8.jpg   → Oranje Buddha kralen armband
+  hero-9.jpg   → Kleurrijke bubblegum kettingen op citroen schaaltje
+  hero-10.jpg  → Paarse kralen armband op schelp schaaltje
+
+Formaat: JPG, bij voorkeur vierkant of staand (portret).
+De slideshow wisselt automatisch elke 4,8 seconden.

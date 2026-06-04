@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winkelwagen — Devon's Own</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-cart">
+
+<div class="toast-container" aria-live="polite"></div>
+
+<header class="site-header is-scrolled" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo logo--img">
+      <img src="images/logo.png" alt="Devon's Own" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="logo-text-fallback">
+        <span class="logo__name">Devon's <span class="logo__mark">Own</span></span>
+        <span class="logo__sub">Handgemaakte Sieraden</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="shop.html" class="nav-link">Webshop</a></li>
+        <li><a href="about.html" class="nav-link">Over Devon</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="header-icon cart-icon" id="cart-open-btn" aria-label="Winkelwagen">🛍️<span class="badge cart-count" style="display:none">0</span></button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu openen" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html" class="nav-link-mob">Home</a>
+  <a href="shop.html" class="nav-link-mob">Webshop</a>
+  <a href="about.html" class="nav-link-mob">Over Devon</a>
+  <a href="contact.html" class="nav-link-mob">Contact</a>
+</nav>
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="mini-cart" id="mini-cart"><div class="cart-head"><span class="cart-head-title">Winkelwagen</span><button class="cart-close-btn" id="cart-close-btn">✕</button></div><div class="cart-body" id="cart-body"></div><div class="cart-foot" id="cart-foot"></div></aside>
+
+<div class="page-banner" style="padding-block-end:var(--space-md)">
+  <div class="wrap">
+    <nav class="breadcrumb"><a href="index.html">Home</a><span>&nbsp;›&nbsp;</span><a href="shop.html">Webshop</a><span>&nbsp;›&nbsp;</span><span>Winkelwagen</span></nav>
+    <h1>Winkelwagen</h1>
+  </div>
+</div>
+
+<!-- STEPS -->
+<div style="background:var(--dark-2);border-bottom:1px solid var(--dark-border);padding:1rem 0">
+  <div class="wrap" style="max-width:440px;margin-inline:auto">
+    <div style="display:flex;align-items:center;gap:0">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:0.4rem;flex:1">
+        <div style="width:32px;height:32px;border-radius:50%;background:var(--gold);color:var(--dark);display:flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:700">1</div>
+        <span style="font-size:0.65rem;color:var(--gold)">Winkelwagen</span>
+      </div>
+      <div style="flex:1;height:2px;background:var(--dark-border);margin-bottom:1.2rem"></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:0.4rem;flex:1">
+        <div style="width:32px;height:32px;border-radius:50%;border:2px solid var(--dark-border);color:var(--on-dark-3);display:flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:700">2</div>
+        <span style="font-size:0.65rem;color:var(--on-dark-3)">Gegevens</span>
+      </div>
+      <div style="flex:1;height:2px;background:var(--dark-border);margin-bottom:1.2rem"></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:0.4rem;flex:1">
+        <div style="width:32px;height:32px;border-radius:50%;border:2px solid var(--dark-border);color:var(--on-dark-3);display:flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:700">3</div>
+        <span style="font-size:0.65rem;color:var(--on-dark-3)">Betaling</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="cart-page" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="cart-split">
+      <div>
+        <div class="cart-table">
+          <div class="cart-table-head">
+            <span>Product</span><span>Prijs</span><span>Aantal</span><span>Totaal</span>
+          </div>
+          <div class="cart-table-body"></div>
+        </div>
+        <div style="margin-top:1.25rem">
+          <a href="shop.html" class="btn btn-outline btn--sm">← Verder winkelen</a>
+        </div>
+      </div>
+      <div class="order-summary-box"></div>
+    </div>
+
+    <!-- Trust row -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem">
+      <div style="text-align:center;padding:1rem">
+        <div style="font-size:1.4rem;margin-bottom:0.6rem">🔒</div>
+        <p style="font-size:var(--t-xs);font-weight:500;color:var(--ink-2)">Veilig betalen</p>
+      </div>
+      <div style="text-align:center;padding:1rem">
+        <div style="font-size:1.4rem;margin-bottom:0.6rem">🚀</div>
+        <p style="font-size:var(--t-xs);font-weight:500;color:var(--ink-2)">Snelle verzending</p>
+      </div>
+      <div style="text-align:center;padding:1rem">
+        <div style="font-size:1.4rem;margin-bottom:0.6rem">🎁</div>
+        <p style="font-size:var(--t-xs);font-weight:500;color:var(--ink-2)">Gratis verpakking</p>
+      </div>
+      <div style="text-align:center;padding:1rem">
+        <div style="font-size:1.4rem;margin-bottom:0.6rem">↩️</div>
+        <p style="font-size:var(--t-xs);font-weight:500;color:var(--ink-2)">7 dagen retour</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo logo--img"><img src="images/logo.png" alt="Devon's Own" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" style="height:48px"><span class="logo-text-fallback"><span class="logo__name">Devon's <span class="logo__mark">Own</span></span><span class="logo__sub">Handgemaakte Sieraden</span></span></div>
+        <p class="footer-brand-desc">Handgemaakte sieraden vol kleur en persoonlijkheid.</p>
+      </div>
+      <div><p class="footer-col-head">Webshop</p><ul class="footer-links"><li><a href="shop.html" class="footer-link">Alle producten</a></li><li><a href="shop.html?cat=armbanden" class="footer-link">Armbanden</a></li></ul></div>
+      <div><p class="footer-col-head">Informatie</p><ul class="footer-links"><li><a href="about.html" class="footer-link">Over Devon</a></li><li><a href="contact.html" class="footer-link">Contact & retour</a></li></ul></div>
+      <div><p class="footer-col-head">Contact</p><div class="footer-contact-row"><span>📞</span><span><a href="tel:+31621946497">+31 6 21 94 64 97</a></span></div></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Devon's Own.</span>
+      <div class="payment-marks"><span class="payment-mark">iDEAL</span><span class="payment-mark">Bancontact</span><span class="payment-mark">PayPal</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
