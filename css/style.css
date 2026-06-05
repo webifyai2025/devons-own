@@ -327,9 +327,8 @@ section { padding-block: var(--space-xl); }
 .hero {
   display: grid;
   grid-template-columns: 55% 45%;
-  min-height: 100svh;
+  height: 100svh;
   overflow: hidden;
-  margin-bottom: -1px;
 }
 .hero-left {
   background: var(--dark);
