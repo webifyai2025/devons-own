@@ -84,7 +84,7 @@ function renderMiniCart() {
   if (!body) return;
 
   if (!cart.length) {
-    body.innerHTML = `<div class="cart-empty-state"><div class="cart-empty-state-icon">🛍️</div><p>Je winkelwagen is leeg.<br>Ontdek onze sieraden!</p></div>`;
+    body.innerHTML = `<div class="cart-empty-state"><div class="cart-empty-state-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:48px;height:48px;color:var(--gold)"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div><p>Je winkelwagen is leeg.<br>Ontdek onze sieraden!</p></div>`;
     if (foot) foot.innerHTML = '';
     return;
   }
@@ -122,7 +122,7 @@ function renderCartPage() {
   if (!tbody || !summary) return;
 
   if (!cart.length) {
-    tbody.innerHTML = `<div style="text-align:center;padding:3rem 1.5rem;color:var(--ink-3)"><div style="font-size:2.5rem;margin-bottom:1rem">🛍️</div><p style="margin-bottom:1.25rem">Je winkelwagen is leeg.</p><a href="shop.html" class="btn btn-gold">Ga naar de shop</a></div>`;
+    tbody.innerHTML = `<div style="text-align:center;padding:3rem 1.5rem;color:var(--ink-3)"><div style="font-size:2.5rem;margin-bottom:1rem"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:60px;height:60px;color:var(--gold)"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div><p style="margin-bottom:1.25rem">Je winkelwagen is leeg.</p><a href="shop.html" class="btn btn-gold">Ga naar de shop</a></div>`;
     summary.innerHTML = '';
     return;
   }
