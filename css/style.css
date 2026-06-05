@@ -1428,7 +1428,14 @@ details.faq-item .faq-body {
   .cart-table-head { display: none; }
   .cart-table-row { grid-template-columns: 1fr 1fr; }
 }
+.values-grid { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 1020px) {
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 560px) {
+  .values-grid { grid-template-columns: 1fr; }
   .cat-grid { grid-template-columns: 1fr 1fr; }
   .cat-card { height: 155px; }
   .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
