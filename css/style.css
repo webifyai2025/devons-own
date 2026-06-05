@@ -1427,6 +1427,8 @@ details.faq-item .faq-body {
   .cart-split { grid-template-columns: 1fr; }
   .cart-table-head { display: none; }
   .cart-table-row { grid-template-columns: 1fr 1fr; }
+  .product-detail { grid-template-columns: 1fr; }
+  .product-image { position: static; }
 }
 .values-grid { grid-template-columns: repeat(3, 1fr); }
 
@@ -1452,6 +1454,10 @@ details.faq-item .faq-body {
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .form-row-2 { grid-template-columns: 1fr; }
+  .product-img-box { min-height: 300px; }
+  .product-title { font-size: var(--t-2xl); }
+  .product-actions { flex-direction: column; }
+  .product-actions .btn { width: 100%; }
 }
 
 /* ══════════════════════════════════════════════════════════
