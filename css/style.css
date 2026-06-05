@@ -820,7 +820,7 @@ section { padding-block: var(--space-xl); }
   transition: background var(--fast); white-space: nowrap;
 }
 .newsletter-submit:hover { background: var(--gold-hi); }
-.newsletter-note { font-size: var(--t-xs); color: var(--on-dark-3); margin-top: 1rem; text-align: center; display: block; }
+.newsletter-note { font-size: var(--t-xs); color: var(--on-dark-3); margin-top: 1rem; text-align: center; display: block; width: 100%; margin-inline: auto; }
 
 /* ── Footer ──────────────────────────────────────────────── */
 .site-footer { background: oklch(0.07 0.012 330); padding-block-start: var(--space-xl); }
