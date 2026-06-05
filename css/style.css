@@ -390,13 +390,14 @@ section { padding-block: var(--space-xl); }
 .usp-item:last-child { border-right: none; }
 .usp-item:hover { background: oklch(1 0 0 / 0.03); }
 .usp-glyph {
-  width: 48px; height: 48px; border-radius: var(--radius-sm);
-  background: var(--gold-dim);
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--gold-dim) 0%, oklch(0.91 0.12 48 / 0.8) 100%);
+  border-radius: var(--radius-sm);
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0; color: var(--gold-hi);
 }
 .usp-glyph.icon {
-  width: 28px; height: 28px;
+  width: 24px; height: 24px;
 }
 .usp-copy strong {
   display: block; font-size: var(--t-xs); font-weight: 600;
