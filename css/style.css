@@ -334,7 +334,7 @@ section { padding-block: var(--space-xl); }
   background: var(--dark);
   display: flex; align-items: center;
   padding: var(--space-xl) clamp(1.5rem, 6vw, 4rem);
-  padding-top: var(--space-xl);
+  padding-top: 0;
   position: relative;
 }
 .hero-left::after {
