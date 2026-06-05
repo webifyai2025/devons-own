@@ -88,6 +88,7 @@ body {
   font-size: var(--t-base);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  padding-top: var(--header-h);
 }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
