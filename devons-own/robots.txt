@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Disallow: /winkelwagen/
+Disallow: /afrekenen/
+Disallow: /mijn-account/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cart.html
+Disallow: /?add-to-cart=
+Disallow: /?s=
+
+Sitemap: https://www.devonsown.nl/sitemap.xml
+Sitemap: https://www.devonsown.nl/wp-sitemap.xml

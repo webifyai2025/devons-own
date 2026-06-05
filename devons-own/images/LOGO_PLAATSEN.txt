@@ -1,0 +1,7 @@
+Sla het Devon's Own logo op als:
+
+  images/logo.png
+
+Het logo wordt automatisch geladen op alle pagina's.
+Op donkere achtergronden (hero, footer) wordt het logo wit weergegeven via CSS filter.
+Als het bestand er niet is verschijnt de tekst-fallback "Devon's Own".
