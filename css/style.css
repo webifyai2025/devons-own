@@ -570,16 +570,19 @@ section { padding-block: var(--space-xl); }
   width: 40px; height: 40px;
   border-radius: var(--radius-full);
   background: var(--gold); color: oklch(0.99 0 0);
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 1;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer; border: none;
   transition: background var(--fast), transform var(--fast);
   padding: 0;
+  flex-shrink: 0;
 }
 .add-to-cart-btn:hover { background: var(--gold-lo); transform: scale(1.1); }
 .add-to-cart-btn.is-added { background: var(--success); }
+.add-to-cart-btn .add-icon {
+  width: 20px; height: 20px;
+  stroke: currentColor;
+  flex-shrink: 0;
+}
 
 /* ══════════════════════════════════════════════════════════
    SHOP PAGE
