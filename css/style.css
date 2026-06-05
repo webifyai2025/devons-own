@@ -567,13 +567,16 @@ section { padding-block: var(--space-xl); }
   font-size: 1rem; font-weight: 500; color: var(--gold-lo);
 }
 .add-to-cart-btn {
-  width: 30px; height: 30px;
+  width: 40px; height: 40px;
   border-radius: var(--radius-full);
   background: var(--gold); color: oklch(0.99 0 0);
-  font-size: 1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer; border: none;
   transition: background var(--fast), transform var(--fast);
+  padding: 0;
 }
 .add-to-cart-btn:hover { background: var(--gold-lo); transform: scale(1.1); }
 .add-to-cart-btn.is-added { background: var(--success); }
@@ -1527,8 +1530,13 @@ details.faq-item .faq-body {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: auto;
+  height: auto;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.cart-icon:hover {
+  border-color: transparent !important;
 }
 .cart-icon .icon {
   width: 1.25rem;
